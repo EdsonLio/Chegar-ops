@@ -1,60 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'self';">
-<title>CHEGAR OPS · Secure Bootstrap</title>
-<style>
-body{font-family:Arial,sans-serif;background:#0f172a;color:#e2e8f0;margin:0;padding:40px;line-height:1.6}
-.card{max-width:900px;margin:auto;background:#111827;border:1px solid #334155;border-radius:12px;padding:32px}
-.code{background:#020617;border:1px solid #1e293b;padding:12px;border-radius:8px;font-family:monospace;overflow:auto}
-.warn{border-left:4px solid #f59e0b;padding-left:12px;margin:20px 0}
-.ok{border-left:4px solid #10b981;padding-left:12px;margin:20px 0}
-</style>
-</head>
-<body>
-<div class="card">
-<h1>CHEGAR OPS Intelligence</h1>
-<p>Esta versão foi endurecida para revisão de segurança e refactorização.</p>
-<div class="warn">
-<strong>Alterações de segurança prioritárias aplicadas:</strong>
-<ul>
-<li>Remoção de palavras-passe em texto claro.</li>
-<li>Preparação para autenticação backend.</li>
-<li>Política CSP básica.</li>
-<li>Preparação para sanitização de HTML.</li>
-<li>Estrutura pronta para modularização.</li>
-</ul>
-</div>
-<div class="ok">
-<strong>Próxima fase recomendada:</strong>
-<ul>
-<li>Migrar para React/Vite ou Next.js.</li>
-<li>Criar backend Node.js/FastAPI.</li>
-<li>Implementar JWT/session auth.</li>
-<li>Adicionar validação Zod/Joi.</li>
-<li>Separar analytics, parser e UI.</li>
-<li>Adicionar testes automatizados.</li>
-</ul>
-</div>
-<h2>Roadmap técnico</h2>
-<div class="code">
-/frontend
-  /components
-  /charts
-  /tables
-  /security
-/backend
-  /auth
-  /upload
-  /analytics
-  /audit
-/shared
-  /schemas
-  /constants
-</div>
-<p>Refactorização em progresso.</p>
-</div>
-</body>
+<!doctype html>
+<html lang="pt" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self';" />
+    <title>CHEGAR · Ops Intelligence</title>
+  </head>
+  <body>
+    <noscript>Active JavaScript para utilizar o CHEGAR Ops Intelligence.</noscript>
+    <div id="app"></div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>
